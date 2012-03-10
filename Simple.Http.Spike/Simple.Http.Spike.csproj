@@ -48,6 +48,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceSpike.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Simple.Http\Simple.Http.csproj">
+      <Project>{AD51D33C-6A5F-477D-82BB-A973D2AEF00F}</Project>
+      <Name>Simple.Http</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
