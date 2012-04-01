@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-
-namespace Simple.Http
+﻿namespace Simple.Http
 {
     public static class Service 
     {

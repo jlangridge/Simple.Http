@@ -25,6 +25,13 @@ namespace Simple.Http
             {
                 var request = Transport.CreateRequest();
                 request.HttpMethod = System.Net.WebRequestMethods.Http.Get;
+                var argCount = 0;
+                foreach (var argumentName in binder.CallInfo.ArgumentNames)
+                {
+                    request.QueryString += string.Format("{0}={1}", argumentName, args[argCount++]);
+                }
+
+                
                 result = new object();
                 return true;
             }
